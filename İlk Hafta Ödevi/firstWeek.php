@@ -24,7 +24,6 @@ yapıldıktan sonra çıktı şu şekilde olmalı:
     3. Ağıl: 45 Koyun
     2. Ağıl: 45 Koyun
     1. Ağıl: 45 Koyun
-
     Dışarıda Kalan: 12 Koyun
 */
 /* Örnek 1 Parametreleriyle Gösterimi */
@@ -34,15 +33,15 @@ echo "Toplam Toplam Koyun: 73 <br><br>";
 
 $agilSayisi = 5;
 $agilKapasite = 30;
-$toplamKapasite = 150;
 $topKoyun = 73;
+$toplamKapasite = $agilKapasite * $agilSayisi;
 $kalanKoyun = $topKoyun;
 $disaridaKalan = $topKoyun - $toplamKapasite;
 
 if ($topKoyun <= $toplamKapasite) {
     for ($kalanKoyun; $kalanKoyun >= 0; $kalanKoyun -= $agilKapasite) {
-        if ($kalanKoyun >= 30) {
-            echo $agilSayisi-- . ". Ağıl: 30" . "<br>";
+        if ($kalanKoyun >= $agilKapasite) {
+            echo $agilSayisi-- . ". Ağıl: $agilKapasite" . "<br>";
         } elseif ($kalanKoyun > 0) {
             echo $agilSayisi-- . ". Ağıl: $kalanKoyun" . "<br>";
             while ($agilSayisi != 0) {
@@ -52,9 +51,9 @@ if ($topKoyun <= $toplamKapasite) {
     }
 } else {
     for ($kalanKoyun; $kalanKoyun >= 0; $kalanKoyun -= $agilKapasite) {
-        if ($kalanKoyun >= 30) {
-            echo $agilSayisi-- . ". Ağıl: 30" . "<br>";
-        } elseif ($kalanKoyun >= 30) {
+        if ($kalanKoyun >= $agilKapasite) {
+            echo $agilSayisi-- . ". Ağıl: $agilKapasite" . "<br>";
+        } elseif ($kalanKoyun >= $agilKapasite) {
             echo $agilSayisi-- . ". Ağıl: $kalanKoyun" . "<br>";
             break;
             while ($agilSayisi != 0) {
@@ -81,15 +80,15 @@ echo "Toplam Toplam Koyun: 147 <br><br>";
 
 $agilSayisi = 3;
 $agilKapasite = 45;
-$toplamKapasite = 135;
 $topKoyun = 147;
+$toplamKapasite = $agilKapasite * $agilSayisi;
 $kalanKoyun = $topKoyun;
 $disaridaKalan = $topKoyun - $toplamKapasite;
 
 if ($topKoyun <= $toplamKapasite) {
     for ($kalanKoyun; $kalanKoyun >= 0; $kalanKoyun -= $agilKapasite) {
-        if ($kalanKoyun >= 45) {
-            echo $agilSayisi-- . ". Ağıl: 45" . "<br>";
+        if ($kalanKoyun >= $agilKapasite) {
+            echo $agilSayisi-- . ". Ağıl: $agilKapasite" . "<br>";
         } elseif ($kalanKoyun > 0) {
             echo $agilSayisi-- . ". Ağıl: $kalanKoyun" . "<br>";
             while ($agilSayisi != 0) {
@@ -99,9 +98,9 @@ if ($topKoyun <= $toplamKapasite) {
     }
 } else {
     for ($kalanKoyun; $kalanKoyun >= 0; $kalanKoyun -= $agilKapasite) {
-        if ($kalanKoyun >= 45) {
-            echo $agilSayisi-- . ". Ağıl: 45" . "<br>";
-        } elseif ($kalanKoyun >= 45) {
+        if ($kalanKoyun >= $agilKapasite) {
+            echo $agilSayisi-- . ". Ağıl: $agilKapasite" . "<br>";
+        } elseif ($kalanKoyun >= $agilKapasite) {
             echo $agilSayisi-- . ". Ağıl: $kalanKoyun" . "<br>";
             break;
             while ($agilSayisi != 0) {
@@ -114,5 +113,3 @@ if ($topKoyun <= $toplamKapasite) {
         break;
     }
 }
-
-
