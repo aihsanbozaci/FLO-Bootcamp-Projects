@@ -95,7 +95,8 @@
 
 
 
-  echo "
+  echo "<b> Sepetiniz: </b>
+  <br><br>
     <table width='100%'>
     <tr>
     <th>Ürün Adı</td>
