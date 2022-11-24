@@ -1,6 +1,5 @@
 <?php
 require("kayitlar.php");
-$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 class Veritabani
 {
     private $baglan;
