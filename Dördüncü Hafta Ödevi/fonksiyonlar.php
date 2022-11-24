@@ -30,7 +30,11 @@ class Veritabani
         $sql = "insert into kayitlar (id,adsoyad, tcno) values (null,?,?)";
         $sorgu = $this->baglan->prepare($sql);
         $sorgu->execute([$adsoyad,$tcno]);
-    }   
+    }
+    public function __destruct()
+    {
+        $this->baglan = null;
+    }
 }
 $baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 ?>
