@@ -1,6 +1,5 @@
 <?php
 require("fonksiyonlar.php");
-$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 $kayitlar = $baglan->veriCek($sql);
 
 echo "
