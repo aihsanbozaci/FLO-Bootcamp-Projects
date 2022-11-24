@@ -15,7 +15,6 @@ class Veritabani
         try {
             $this->baglan = new PDO("mysql:host=$this->host;dbname=$this->veritabani;charset=utf8", $this->kullanici, $this->sifre);
             $this->baglan->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
         } catch (PDOException $e) {
             echo "Bağlantı hatası: " . $e->getMessage() . "<br>";
         }
