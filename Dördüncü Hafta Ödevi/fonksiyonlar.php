@@ -32,4 +32,5 @@ class Veritabani
         $sorgu->execute([$adsoyad,$tcno]);
     }   
 }
+$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 ?>
