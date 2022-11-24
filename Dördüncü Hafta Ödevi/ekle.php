@@ -1,6 +1,5 @@
 <?php
 require("fonksiyonlar.php");
-$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 if(isset($_POST['kaydet'])){
     $adsoyad = $_POST['adsoyad'];
     $tcno = $_POST['tcno'];
