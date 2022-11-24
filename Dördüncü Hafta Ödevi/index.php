@@ -19,6 +19,5 @@
         <br><br>
         <input type="submit" name="kaydet" value="Doğrula ve Kaydet" style="background-color: dodgerblue; color:white;">
     </form>
-
 </body>
 </html>
