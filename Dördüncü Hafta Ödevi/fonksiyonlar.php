@@ -1,13 +1,21 @@
 <?php
 require("kayitlar.php");
+$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
 class Veritabani
 {
     private $baglan;
-    public function __construct($host, $kullanici, $sifre, $veritabani)
+    
+    private $host = 'localhost';
+    private $kullanici = "root";
+    private $sifre = "aabbcc123";
+    private $veritabani = "dorduncuhafta";
+
+    public function __construct()
     {
         try {
-            $this->baglan = new PDO("mysql:host=$host;dbname=$veritabani;charset=utf8", $kullanici, $sifre);
+            $this->baglan = new PDO("mysql:host=$this->host;dbname=$this->veritabani;charset=utf8", $this->kullanici, $this->sifre);
             $this->baglan->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
         } catch (PDOException $e) {
             echo "Bağlantı hatası: " . $e->getMessage() . "<br>";
         }
