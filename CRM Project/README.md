@@ -1,36 +1,40 @@
-veritabanı adı: crm
+# CRM (Customer Relationship Management)
+
+
+### Veritabanı Adı: crm
 ------------------
-Kullanıcı Adı: admin
-Şifre: 123456
+### Kullanıcı Adı: admin
+### Şifre: 123456
 ------------------
 ## Dosya açıklamaları:
 
-1-index.php : admin giriş ekranına giriyoruz. Bilgiler karşılaştırılıp session başlatılıyor.
+1- **index.php** : admin giriş ekranına giriyoruz. Bilgiler karşılaştırılıp session başlatılıyor.
 
-2-fonksiyonlar.php : class ve metotlar, yapılacak işlemler ve fonksiyonlar buradan çekiliyor.
+2- **fonksiyonlar.php** : class ve metotlar, yapılacak işlemler ve fonksiyonlar buradan çekiliyor.
 
-3-kayitlar.php : veritabanındaki bilgiler burada class içinde tanımlanıyor.
+3- **kayitlar.php** : veritabanındaki bilgiler burada class içinde tanımlanıyor.
 
-4-tablolar.php : müşteri şirket kayıtları listeleniyor. Kayıtlar arasında arama yapabilir, kayıt düzenleyip silebilirsiniz.
+4- **tablolar.php** : müşteri şirket kayıtları listeleniyor. Kayıtlar arasında arama yapabilir, kayıt düzenleyip silebilirsiniz.
 
-5-musteri-formu.php : müşteri kaydetme formu.
+5- **musteri-formu.php** : müşteri kaydetme formu.
 
-6-musteri-ekle.php : müşteri ve şirket logosu kayıt işlemleri yapılıyor.
+6- **musteri-ekle.php** : müşteri ve şirket logosu kayıt işlemleri yapılıyor.
 
-7-duzenle.php : seçilen müşteri id'sine göre forma müşteri verilerini veritabanından çekiyor, düzenleme yapmamıza izin veriyor. Değiştirilen resim de dosyalardan siliniyor.
+7- **duzenle.php** : seçilen müşteri id'sine göre forma müşteri verilerini veritabanından çekiyor, düzenleme yapmamıza izin veriyor. Değiştirilen resim de dosyalardan siliniyor.
 
-8-sil.php : kayıt silmemizi sağlıyor.
+8- **sil.php** : kayıt silmemizi sağlıyor.
 
-7-csv.php : tablo sayfamızdaki csv butonuyla kayıtları CSV formatında indiriyor.
+7- **csv.php** : tablo sayfamızdaki csv butonuyla kayıtları CSV formatında indiriyor.
 
-8-logo.php : yazılımın kendi logosunu da değiştirilebilir yaptım.
+8- **logo.php** : yazılımın kendi logosunu da değiştirilebilir yaptım.
 
-9-upload.php : yazılımın logosunun değiştirilme işlemleri burada yapılıyor.
+9- **upload.php** : yazılımın logosunun değiştirilme işlemleri burada yapılıyor.
 
-10-cikis.php : session destroy ediliyor, giriş sayfasına yönlendiriliyor.
+10- **cikis.php** : session destroy ediliyor, giriş sayfasına yönlendiriliyor.
 
-Not: Html head ve footer kısımları partials dosyasından include ediliyor.
-No2: Eklenen logolar uploads klasöründe tutuluyor.
+**Not:** Html head ve footer kısımları partials dosyasından include ediliyor.
+
+**Not2:** Eklenen logolar uploads klasöründe tutuluyor.
 
 
 https://user-images.githubusercontent.com/82964908/205290200-5298edce-39e3-4bd2-b22f-c3e07428466c.mp4
