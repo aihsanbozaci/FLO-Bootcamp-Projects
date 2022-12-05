@@ -1,4 +1,4 @@
-# CRM (Customer Relationship Management)
+# CRM (Customer Relationship Management) - OOP
 
 
 ### Veritabanı Adı: crm
@@ -37,4 +37,3 @@
 **Not2:** Eklenen logolar uploads klasöründe tutuluyor.
 
 
-https://user-images.githubusercontent.com/82964908/205290200-5298edce-39e3-4bd2-b22f-c3e07428466c.mp4
