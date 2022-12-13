@@ -36,5 +36,5 @@ class Veritabani
         $this->baglan = null;
     }
 }
-$baglan = new Veritabani("localhost", "root", "aabbcc123", "dorduncuhafta");
+$baglan = new Veritabani("localhost", "root", "", "dorduncuhafta");
 ?>
